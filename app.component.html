@@ -1,0 +1,53 @@
+<table class="cool-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Published Year</th>
+      <th>Author Name</th>
+      <th>Nationality</th>
+      <th>Birth Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.Author }}</td>
+      <td>{{ book.publishedYear }}</td>
+
+
+      <td>{{ book.Author.name }}</td>
+      <td>{{ book.Nationality  }}</td>
+      <td>{{ book.birthYear }}</td>
+
+
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<!-- <table class="cool-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Published Year</th>
+      <th>Author Name</th>
+      <th>Nationality</th>
+      <th>Birth Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author?.name }}</td>
+     <td>{{ book.publishedYear }}</td>
+      <td>{{ book.author?.name }}</td>
+    <td>{{ book.author?.nationality }}</td>
+      <td>{{ book.author?.birthYear }}</td>
+     </tr> -->
+  <!-- </tbody> -->
+<!-- </table> -->
+
